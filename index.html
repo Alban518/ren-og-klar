@@ -100,77 +100,11 @@ Jeg tilbyder en grundig og enkel cykelvask til en fair pris.
 <p>📍 Kun i Aalborg</p>
 <p>📞 Telefon:+45 50 53 79 59  </p>
 <p>✉️ E-mail: Albankaleshi7@gmail.com</p>
-<h2>📅 Vælg tid til cykelvask</h2>
-
-<label>Vælg dato:</label><br>
-<input type="date">
-
-<form action="mailto:Albankaleshi7@gmail.com" method="post" enctype="text/plain">
 
 
 
-<h2>🚲 Bestil cykelvask</h2>
-
-<p>Vælg vask:</p>
-
-<button onclick="vælg('Basisvask 149 kr.')">
-Basisvask - 149 kr.
-</button>
-
-<button onclick="vælg('Premium')">
-Premium
-</button>
-
-<br><br>
-
-<p>Vælg dag:</p>
-
-<select id="dag">
-  <option>Mandag</option>
-  <option>Tirsdag</option>
-  <option>Onsdag</option>
-  <option>Torsdag</option>
-  <option>Fredag</option>
-  
-</select>
-
-<br><br>
-
-<p>Ledige tider:</p>
-
-<select id="tid">
-  <option>15:00</option>
-  <option>16:00</option>
-  <option>17:00</option>
-</select>
-
-<br><br>
-
-<button onclick="send()">
-Bestil tid 🚲
-</button>
 
 
-<script>
-let vask = "";
-
-function vælg(valg){
-vask = valg;
-}
-
-function send(){
-
-let dag = document.getElementById("dag").value;
-let tid = document.getElementById("tid").value;
-
-window.location.href =
-"mailto:DINMAIL@MAIL.DK?subject=Ny cykelbestilling&body=" +
-"Vask: " + vask +
-"%0ADag: " + dag +
-"%0ATid: " + tid;
-
-}
-</script>
 
 
 
